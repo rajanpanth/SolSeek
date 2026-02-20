@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "SolSeek",
+    "slug": "soldrop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a1a"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.soldrop.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SolSeek needs your location to find nearby airdrops.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "SolSeek needs your location to find nearby airdrops."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0a1a"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "package": "com.soldrop.app"
+    },
+    "plugins": [
+      "expo-location",
+      "expo-asset",
+      "expo-font"
+    ]
+  }
+}
